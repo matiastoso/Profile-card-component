@@ -1,0 +1,44 @@
+// Estilos generales
+:root {
+    --sark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--sark-cyan);
+}
+
+// Estilos del contenedor
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+// Estilos del card
+.card {
+    background-color: white;
+    width: 326px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.712);
+    // Este overflow permite que la imagen se adapte al contenedor
+    overflow: hidden;
+
+    &-header{
+        width: 100%;
+    }
+}
